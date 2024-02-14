@@ -79,7 +79,7 @@ section{
     color: #777777;
     font: 14px;
 }
-.currency-value{
+.currency-value ,.to-convert-currency-value{
     color:#555555;
     font-weight: 700;
     font-size: 20px;
