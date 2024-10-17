@@ -13,52 +13,49 @@
 </head>
 
 <body>
-    <img class="logo" src="./assets/9949791.png" alt="Coversor-de-Moeda">
     <main>
-        <label>
-            Converter <b>de</b>
-            <select>
-                <option>R$ Real Brasileiro</option>
-            </select>
-        </label>
+    <img class="top-img" src="./assets/9949791.png" alt="Coversor-de-Moeda">
+        <container>
+                <h1>Conversor de Moedas</h1>
+                <p>Converter <b> de </b></p>
+                <select>
+                    <option>R$ Real Brasileiro</option>
+                </select>
+        
+                <p>Converter <b> para </b></p> 
+                <select class="select-value">
+                    <option value="dolar">US$ Dolar Americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                    <option value="bitcoin">BTC Bitcoin</option>
+                </select>
+        
+                <b>Valor</b>
+                <input class="input-currency" placeholder="R$ 10.000,00" type="number">
+        
 
-        <label>
-            Converter <b>para</b>
-            <select class="select-value">
-                <option value="dolar">US$ Dolar Americano</option>
-                <option value="euro">€ Euro</option>
-                <option value="libra">£ Libra</option>
-                <option value="bitcoin">BTC Bitcoin</option>
-            </select>
-        </label>
+            <button type="button" class="convert-button"> Converter </button>
 
-        <label>
-            Valor
-            <input class="input-currency" placeholder="R$ 10.000,00" type ="number">
-        </label>
+            <section>
 
-        <button class="convert-button"> Converter </button>
+                <div>
+                    <img src="./assets/real.png" alt="logo-Real">
+                    <p class="currency">Real</p>
+                    <p class="to-convert-currency-value">R$ 0,00</p>
+                </div>
 
-        <section>
+                <img  src="./assets/Vector.png" alt="logo-seta">
 
-            <div class="currency-box">
-                <img src="./assets/real.png" alt="logo-Real">
-                <p class="currency">Real</p>
-                <p class="to-convert-currency-value">R$ 0,00</p>
-            </div>
-
-            <img class="seta" src="./assets/Vector.png" alt="logo-seta">
-
-            <div class="currency-box">
-                <img class="log" src="./assets/dolar.png" alt="logo-Convertida">
-                <p class="currency-name">Dólar</p>
-                <p class="currency-value">US$ 0,00</p>
-            </div>
-
-        </section>
-
-    </main> 
-
+                <div>
+                    <img class="log" src="./assets/dolar.png" alt="logo-Convertida">
+                    <p class="currency-name">Dólar</p>
+                    <p class="currency-value">US$ 0,00</p>
+                </div>
+            </section>
+        </container>
+    </main>
 </body>
+
 <script src="./script.js"></script>
+
 </html>
