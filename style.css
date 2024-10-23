@@ -16,7 +16,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap:25px;
 }
 .top-img{
     width: 200px;
@@ -27,8 +26,8 @@ container{
     flex-direction: column;
     background-color: aliceblue;
     border-radius: 20px;
-    padding: 75px 30px;
-    gap:20px;
+    padding: 10px 20px;
+    gap:5px;
 }
 select ,.input-currency{
     width: 327px;
@@ -39,12 +38,12 @@ select ,.input-currency{
     background-color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
-    color: #555555;
+    color: #7811ff;
 }
 button{
     width: 325px;
     height: 50px;
-    margin-top: 18px;
+    margin-top: 10px;
     border-radius: 11px;
     border: 1px;
     background-color: #772FD3;
