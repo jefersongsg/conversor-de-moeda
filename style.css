@@ -67,7 +67,7 @@ section{
     gap: 18px;
     
 }
-.currency-value ,.to-convert-currency-value,.currency,currency-name {
+.currency-value ,.to-convert-currency-value,.currency,.currency-name {
     color:#555555;
     font-weight: 700;
     font-size: 20px;
