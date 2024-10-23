@@ -67,11 +67,11 @@ section{
     gap: 18px;
     
 }
-.currency-value ,.to-convert-currency-value,.currency {
+.currency-value ,.to-convert-currency-value,.currency,currency-name {
     color:#555555;
     font-weight: 700;
     font-size: 20px;
-
+    display: inline-grid;
 }
 b{
     color: black;
