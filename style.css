@@ -6,10 +6,11 @@
     outline: none;
 }
 body {
-    background-color: rgba(86, 209, 213, 0.83);
+    background-color: rgba(0, 0, 0, 0.83);
     display: flex;
     align-items: center;
-    flex-direction: column;                                                                             
+    flex-direction: column; 
+    height: 100vh;                                                                            
 }
 main {
     display: flex;
@@ -18,16 +19,20 @@ main {
     flex-direction: column;
 }
 .top-img{
-    width: 150px;
-    margin-top: 20px;
+    width: 110px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.seta{
+    width: 25px;
 }
 container{ 
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
+    background-color: rgb(25, 143, 114);
     border-radius: 20px;
     padding: 10px 20px;
-    gap:5px;
+    gap: 10px;
 }
 select ,.input-currency{
     width: 327px;
@@ -39,13 +44,13 @@ select ,.input-currency{
     font-weight: 700;
     font-size: 16px;
     color: #7811ff;
+    padding-left: 15px;
 }
 button{
     width: 325px;
-    height: 35px;
+    height: 48px;
     margin-top: 5px;
-    border-radius: 11px;
-    border: 1px;
+    border-radius: 10px;
     background-color: #772FD3;
     font-size: 18px;
     font-weight: 700;
@@ -59,14 +64,15 @@ button:active {
     opacity: 0.3;
 }
 section{
-    border: 3px solid #772FD3;
-    border-radius: 70px;
+    border: 2px solid #772FD3;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px 0 20px;;
 }
-.currency-value ,.to-convert-currency-value,.currency,.currency-name, {
-    color:#555555;
+.currency-value ,.to-convert-currency-value,.currency,.currency-name{
+    color:#272727;
     font-weight: 700;
     font-size: 20px;
     text-align: center;
@@ -77,16 +83,17 @@ b{
     
 }
 h1{
-    background-color:#7730d4 ;
-    color: #eaecef;
-    font-size: 20px;
+    display: flex;
+    color: black;
+    font-size: 24px;
     font-weight: 700;  
-    border-radius: 15px;
-    border: 6px solid #7730d4;
-    text-align: center;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
 }
 div{
     display: flex;
     justify-items: center;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
 }
