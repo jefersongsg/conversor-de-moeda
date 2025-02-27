@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image" href="assets/money.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,27 +15,32 @@
 
 <body>
     <main>
-    <img class="top-img" src="./assets/9949791.png" alt="Coversor-de-Moeda">
+    <img class="top-img" src="./assets/cash.ico" alt="Coversor-de-Moeda">
         <container>
                 <h1>Conversor de Moedas</h1>
                 <p>Converter <b> de </b></p>
-                <select>
-                    <option>R$ Real Brasileiro</option>
+                <select class="select-from-value">
+                    <option value="real">R$ Real Brasileiro</option>
+                    <!--<option value="dolar">US$ Dolar Americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                    <option value="bitcoin">BTC Bitcoin</option>-->
                 </select>
         
                 <p>Converter <b> para </b></p> 
-                <select class="select-value">
+                <select class="select-to-value">
                     <option value="dolar">US$ Dolar Americano</option>
                     <option value="euro">€ Euro</option>
                     <option value="libra">£ Libra</option>
                     <option value="bitcoin">BTC Bitcoin</option>
+                    <option value="real">R$ Real Brasileiro</option>
                 </select>
         
                 <b>Valor</b>
                 <input class="input-currency" placeholder="R$ 10.000,00" type="number">
         
 
-            <button type="button" class="convert-button"> Converter </button>
+            <!-- <button type="button" class="convert-button"> Converter </button> -->
 
             <section>
 

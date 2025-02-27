@@ -29,13 +29,15 @@ main {
 container{ 
     display: flex;
     flex-direction: column;
-    background-color: rgb(25, 143, 114);
+    background: linear-gradient(380deg, rgb(93, 190, 235) 14%, rgb(84, 82, 182) 56%, rgb(42, 210, 132) 91%);
     border-radius: 20px;
     padding: 10px 20px;
     gap: 10px;
 }
 select ,.input-currency{
-    width: 327px;
+    display: flex;
+    text-align: center;
+    min-width: 327px;
     height: 48px;
     border-radius: 4px;
     border: 1px solid #772FD3;
@@ -44,7 +46,7 @@ select ,.input-currency{
     font-weight: 700;
     font-size: 16px;
     color: #7811ff;
-    padding-left: 15px;
+    
 }
 button{
     width: 325px;
@@ -84,8 +86,8 @@ b{
 }
 h1{
     display: flex;
-    color: black;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-size: 30px;
     font-weight: 700;  
     height: 70px;
     align-items: center;
@@ -96,4 +98,5 @@ div{
     justify-items: center;
     align-items: center;
     gap: 10px;
+    margin: 20px 0 10px;
 }

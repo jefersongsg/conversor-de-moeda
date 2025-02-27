@@ -1,5 +1,6 @@
-const convertButton = document.querySelector(".convert-button")
-const selectValue = document.querySelector(".select-value")
+const convertButton = document.querySelector(".convert-button");
+const selectValue = document.querySelector(".select-to-value");
+const convertedValue = document.querySelector(".select-from-value");
 
 
 function convertValues() {
@@ -9,16 +10,17 @@ function convertValues() {
 
     console.log(selectValue.value)
 
-    const dolarToday = 4.97
-    const euroToday = 5.34
-    const libraToday = 6.25
+    const dolarToday = 5
+    const euroToday = 6
+    const libraToday = 7
     const bitcoinToday = 257.632
+    const realToday = 1
 
 
 
-    //currencyValueToConverted.innerHTML = convertedValue
+    currencyValueToConverted.innerHTML = convertedValue
     currencyValueToConvert.innerHTML = inputCurrencyValue
-
+   
 
     if (selectValue.value == "dolar") {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat("en-US", {
@@ -48,8 +50,13 @@ function convertValues() {
             currency: "BTC"
         }).format(inputCurrencyValue / bitcoinToday)
     }
-
-
+    
+    if (selectValue.value == "real") {
+        currencyValueToConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+        }).format(inputCurrencyValue / realToday)
+    }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
@@ -61,7 +68,7 @@ function changeCurrency() {
     const currencyName = document.querySelector(".currency-name")
     const currencyImg = document.querySelector(".log")
 
-    if (selectValue.value == "dolar") {
+    if (selectValue.value == "dolar"){
         currencyName.innerHTML = "Dólar americano"
         currencyImg.src = "./assets/dolar.png"
     }
@@ -80,8 +87,12 @@ function changeCurrency() {
         currencyName.innerHTML = "Bitcoin"
         currencyImg.src = "./assets/bitcoin.png"
     }
+    if (selectValue.value == "real") {
+        currencyName.innerHTML = "Real"
+        currencyImg.src = "./assets/real.png"
+    }
     convertValues()
 }
 
-selectValue.addEventListener("change", changeCurrency)
-convertButton.addEventListener("click", convertValues)
+selectValue.addEventListener("change", changeCurrency);
+document.querySelector(".input-currency").addEventListener("input", convertValues);
