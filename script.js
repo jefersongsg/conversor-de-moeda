@@ -9,24 +9,26 @@ function convertValues() {
     const currencyValueToConverted = document.querySelector(".currency-value") // outros moedas
 
     console.log(selectValue.value)
+    console.log(convertedValue.value)
 
-    const dolarToday = 5
-    const euroToday = 6
-    const libraToday = 7
-    const bitcoinToday = 257.632
-    const realToday = 1
+    const vToday = {
+        dolar: 5,
+        euro: 6,
+        libra: 7,
+        bitcoin: 257.632,
+        real: 1
+    };
 
 
-
-    currencyValueToConverted.innerHTML = convertedValue
-    currencyValueToConvert.innerHTML = inputCurrencyValue
+    //currencyValueToConverted.innerHTML = convertedValue
+    //currencyValueToConvert.innerHTML = inputCurrencyValue
    
 
     if (selectValue.value == "dolar") {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
-        }).format(inputCurrencyValue / dolarToday)
+        }).format(inputCurrencyValue / vToday.dolar)
 
     }
 
@@ -34,28 +36,28 @@ function convertValues() {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
-        }).format(inputCurrencyValue / euroToday)
+        }).format(inputCurrencyValue / vToday.euro)
     }
 
     if (selectValue.value == "libra") {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "GBP"
-        }).format(inputCurrencyValue / libraToday)
+        }).format(inputCurrencyValue / vToday.libra)
     }
 
     if (selectValue.value == "bitcoin") {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "BTC"
-        }).format(inputCurrencyValue / bitcoinToday)
+        }).format(inputCurrencyValue / vToday.bitcoin)
     }
     
     if (selectValue.value == "real") {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BRL"
-        }).format(inputCurrencyValue / realToday)
+        }).format(inputCurrencyValue / vToday.real)
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
