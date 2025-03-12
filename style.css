@@ -19,17 +19,18 @@ main {
     flex-direction: column;
 }
 .top-img{
-    width: 110px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    width: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .seta{
     width: 25px;
 }
 container{ 
+    box-shadow: 0px 4px 20px 2px rgb(42, 210, 132);
     display: flex;
     flex-direction: column;
-    background: linear-gradient(380deg, rgb(93, 190, 235) 14%, rgb(84, 82, 182) 56%, rgb(42, 210, 132) 91%);
+    background: linear-gradient(180deg, rgb(62 169 66) 36%, #8f47ec 88%);
     border-radius: 20px;
     padding: 10px 20px;
     gap: 10px;
@@ -37,10 +38,10 @@ container{
 select ,.input-currency{
     display: flex;
     text-align: center;
-    min-width: 327px;
-    height: 48px;
+    min-width: 280px;
+    height: 32px;
     border-radius: 4px;
-    border: 1px solid rgb(25, 208, 65);
+    border: none;
     appearance: none;
     background-color: #d1d1d1;
     font-weight: 700;
@@ -49,9 +50,8 @@ select ,.input-currency{
 }
 button{
     text-align: center;
-    min-width: 327px;
-    height: 48px;
-    margin-top: 10px;
+    min-width: 280px;
+    height: 40px;
     border-radius: 10px;
     border: none;
     background-color: #772FD3;
@@ -72,7 +72,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0 20px;;
+    margin: 10px 0 10px;;
 }
 .currency-value ,.to-convert-currency-value,.currency,.currency-name{
     color:#272727;
@@ -88,9 +88,9 @@ b{
 h1{
     display: flex;
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 700;  
-    height: 70px;
+    height: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -99,5 +99,5 @@ div{
     justify-items: center;
     align-items: center;
     gap: 10px;
-    margin: 20px 0 10px;
+    margin: 10px 0 10px;
 }
